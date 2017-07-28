@@ -1,4 +1,4 @@
-# Kotlin Workshop
+# Kotlin Examples
 
 Different examples of Kotlin language used for a Kotlin workshop hosted by Android Devs Buenos Aires Meetup
 
