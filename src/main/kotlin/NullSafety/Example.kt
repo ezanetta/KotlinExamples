@@ -9,8 +9,8 @@ fun main(args: Array<String>) {
     println(countCharsWithElvisOperator(fieldCanBeNull))
 }
 
-fun countCharsInJavaWay(word: String?) : Int {
-    if(word == null) {
+fun countCharsInJavaWay(word: String?): Int {
+    if (word == null) {
         return -1
     } else {
         return word.length
@@ -18,9 +18,13 @@ fun countCharsInJavaWay(word: String?) : Int {
 }
 
 // TODO if the word param is null, return null
-fun countCharsInKotlin(word: String?): Int?  = word?.length
+fun countCharsInKotlin(word: String?): Int? {
+    return word?.length
+}
 
-fun countCharsWithElvisOperator(word: String?) : Int = word?.length ?: -1
+fun countCharsWithElvisOperator(word: String?): Int {
+    return word?.length ?: -1
+}
 
 // TODO if the word param is null this throw a KotlinNullPointerException
-fun countCharsWithNeverNullParam(word: String?) : Int = word!!.length
+fun countCharsWithNeverNullParam(word: String?): Int = word!!.length
