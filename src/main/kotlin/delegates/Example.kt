@@ -5,13 +5,18 @@ class LazyProperty {
         println("Calculate the value")
         42
     }
+
+    val notLazy = 10
 }
 
 fun main(args: Array<String>) {
+
     println("--- creation ---")
     val property = LazyProperty()
 
-    println("--- first access --- ${property.lazy}")
+    println("--- normal property --- ${property.notLazy}")
 
-    println("--- second access --- ${property.lazy}")
+    println("--- first access to lazy property --- ${property.lazy}")
+
+    println("--- second access to lazy property --- ${property.lazy}")
 }
